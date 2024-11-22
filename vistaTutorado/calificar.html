@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calificación y Opinión</title>
+  link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+
+    .container-box {
+      width: 556px;
+      height: 621px;
+      background: white;
+      border-radius: 35px;
+      border: 2px rgba(0, 0, 0, 0.05) solid;
+      padding: 30px;
+      margin-top: 50px;
+    }
+    .title-calificar {
+      text-align: center;
+      font-size: 31px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      color: black;
+    }
+    .title-opinion {
+      font-size: 43px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      color: black;
+      margin-bottom: 20px;
+    }
+    .image-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .image-container img {
+      width: 180px;
+      height: 72px;
+    }
+    .comment-title {
+      text-align: center;
+      font-size: 31px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      color: black;
+      margin-top: 30px;
+    }
+    .comment-box {
+      width: 100%;
+      height: 174px;
+      background: #F0EFEF;
+      border-radius: 35px;
+      border: 2px rgba(0, 0, 0, 0.65) solid;
+      margin-top: 10px;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .close-btn {
+      color: rgba(0, 0, 0, 0.50);
+      font-size: 43px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TutorPlatform</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="buscarTutor.html">Buscar tutor</a></li>
+            <li class="nav-item"><a class="nav-link" href="historialTutorias.html">Historial</a></li>
+            <li class="nav-item"><a class="nav-link" href="perfilTutorado.html">Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center">
+    <div class="container-box">
+      <div class="title-calificar">Calificar</div>
+      <div class="title-opinion">Escribe una opinión</div>
+      
+
+      <div class="image-container">
+        <img src="https://via.placeholder.com/180x72" alt="Imagen placeholder" />
+      </div>
+
+
+      <div class="comment-title">Comentario</div>
+      <div class="comment-box" contenteditable="true">
+    
+        Escribe tu comentario aquí...
+      </div>
+      
+    
+      <div class="close-btn" onclick="alert('Comentario cancelado')">x</div>
+    </div>
+  </div>
+
+
+  <footer class="text-center mt-4">
+    <p>&copy; 2024 TutorPlatform. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

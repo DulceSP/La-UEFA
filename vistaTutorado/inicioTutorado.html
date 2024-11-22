@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorPlatform - Página de Inicio</title>
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .container {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .header-title {
+      color: black;
+      font-size: 32px;
+      font-family: Inter, sans-serif;
+      font-weight: 800;
+      word-wrap: break-word;
+    }
+
+    .subtitle {
+      color: black;
+      font-size: 25px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    .section-title {
+      color: black;
+      font-size: 25px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .content-item {
+      color: black;
+      font-size: 25px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TutorPlatform</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="buscarTutor.html">Buscar tutor</a></li>
+          <li class="nav-item"><a class="nav-link" href="historialTutorias.html">Historial</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfilTutorado.html">Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <div class="text-center mb-4">
+        <h1 class="header-title">Bienvenid@</h1>
+        <h2 class="subtitle">Eduardo Manilla</h2>
+      </div>
+
+      <div class="text-center mb-4">
+        <h3 class="section-title">Tutorías en curso</h3>
+      </div>
+
+      <div class="mb-4">
+        <p class="content-item">Tutoria: Calculo Integral</p>
+        <p class="content-item">Tema: Longitud de arcos</p>
+        <p class="content-item">Tutor: Pedro Juárez</p>
+        <p class="content-item">Estado: En progreso</p>
+        <a href="vistaTutoria.html" class="btn btn-outline-secondary btn-sm">Ver más</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 TutorPlataform. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

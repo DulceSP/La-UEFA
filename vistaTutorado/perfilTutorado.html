@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información del Tutorado</title>
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TutorPlatform</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="inicioTutor.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="solicitudes.html">Solicitudes</a></li>
+            <li class="nav-item"><a class="nav-link" href="tutoriasAgendadas.html">Agenda</a></li>
+            <li class="nav-item"><a class="nav-link" href="perfilTutorado.html">Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <a href="editTutorado.html" class="btn btn-success mt-3">Editar perfil</a>
+
+ 
+  <div class="container mt-5">
+    
+    <div class="text-center">
+      <img src="https://via.placeholder.com/450x450" alt="Foto del tutorado" class="img-fluid rounded-circle shadow" style="width: 450px; height: 450px;">
+      <h1 class="mt-4 fw-bold">Información del Tutorado</h1>
+    </div>
+
+    <div class="mt-4">
+      <h2 class="fw-bold">David López</h2>
+      <h3 class="fw-bold">david@gmail.com</h3>
+      <p class="fw-bold fs-4">Calificación: <span class="fw-normal">8.3%</span></p>
+      <p class="fw-bold fs-4">Especialidad: <span class="fw-normal">Inglés</span></p>
+    </div>
+
+ 
+    <h3 class="mt-5 fw-bold">Historial de tutorías</h3>
+    <table class="table table-striped mt-3">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Tutor</th>
+          <th>Duración</th>
+          <th>Fecha</th>
+          <th>Especialidad</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Pedro Juarez</td>
+          <td>2 horas</td>
+          <td>22/11/2024</td>
+          <td>Inglés</td>
+          <td>
+            <a href="vistaTutoria.html" class="btn btn-warning rounded-pill">Ver más</a>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Pedro Juarez</td>
+          <td>1 hora</td>
+          <td>23/11/2024</td>
+          <td>Programación</td>
+          <td>
+            <a href="vistaTutoría.html" class="btn btn-warning rounded-pill">Ver más</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

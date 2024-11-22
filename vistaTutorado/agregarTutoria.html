@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planifica tu Tutoría - TutorPlatform</title>
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TutorPlatform</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="buscarTutor.html">Buscar tutor</a></li>
+          <li class="nav-item"><a class="nav-link" href="historialTutorias.html">Historial</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfilTutorado.html">Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h1 class="text-center fw-bold mb-4">Planifica tu próxima tutoría</h1>
+    <p class="text-center text-muted mb-5">
+      Establece los detalles de tu tutoría para asegurar una experiencia productiva y organizada.
+    </p>
+
+    <div class="card mx-auto p-4" style="max-width: 800px; border-radius: 25px;">
+      <form>
+        <div class="mb-4">
+          <label for="habilidad" class="form-label fs-4">Elige una habilidad</label>
+          <select id="habilidad" class="form-select" style="border-radius: 40px;">
+            <option selected>Seleccionar...</option>
+            <option value="1">Programación</option>
+            <option value="2">Inglés</option>
+            <option value="3">Matemáticas</option>
+          </select>
+        </div>
+
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <label for="fecha" class="form-label fs-4">Fecha</label>
+            <input type="date" id="fecha" class="form-control" style="border-radius: 40px;">
+          </div>
+          <div class="col-md-6">
+            <label for="hora" class="form-label fs-4">Hora</label>
+            <input type="time" id="hora" class="form-control" style="border-radius: 40px;">
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="duracion" class="form-label fs-4">Duración</label>
+          <select id="duracion" class="form-select" style="border-radius: 40px;">
+            <option selected>Seleccionar...</option>
+            <option value="1">1 hora</option>
+            <option value="2">2 horas</option>
+            <option value="3">3 horas</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="notas" class="form-label fs-4">Notas adicionales</label>
+          <textarea id="notas" class="form-control" rows="3" placeholder="Proporciona información adicional..." style="border-radius: 28px;"></textarea>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="perfilTutor.html" class="btn btn-warning mt-3">Confirmar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 TutorPlataform. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
