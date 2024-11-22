@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorPlatform - Tutorías Agendadas</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .navbar-brand {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .table td, .table th {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .action-btn {
+            border-radius: 25px;
+            color: white;
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        .btn-ver {
+            background-color: #F2F09B;
+        }
+
+        .btn-cancelar {
+            background-color: #F99393;
+        }
+
+        .action-btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .header {
+            font-family: 'Inter', sans-serif;
+            font-size: 40px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .subheader {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: black;
+        }
+
+        .footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">TutorPlatform</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="inicioTutor.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="solicitudes.html">Solicitudes</a></li>
+                <li class="nav-item"><a class="nav-link" href="tutoriasAgendadas.html">Agenda</a></li>
+                <li class="nav-item"><a class="nav-link" href="perfilTutor.html">Perfil</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="header">Tutorías Agendadas</div>
+
+<div class="container mt-4">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="subheader">Fecha / Hora</th>
+                <th class="subheader">Nombre del tutor o tutorado</th>
+                <th class="subheader">Tema de la tutoría</th>
+                <th class="subheader">Estado</th>
+                <th class="subheader"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024-11-25 15:00</td>
+                <td>Juan Perez</td>
+                <td>Cálculo integral</td>
+                <td>Confirmada</td>
+                <td class="action-btn-container">
+                    <a href="vistaTutoria.html" class="btn btn-warning mt-3">Ver más</a>
+                    <button class="btn btn-danger mt-3">Cancelar</button>
+                    <a href="calificar.html" class="btn btn-primary mt-3">Calificar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>2024-11-26 10:00</td>
+                <td>Maria Lopez</td>
+                <td>Álgebra lineal</td>
+                <td>Pendiente</td>
+                <td class="action-btn-container">
+                    <a href="vistaTutoria.html" class="btn btn-warning mt-3">Ver más</a>
+                    <button class="btn btn-danger mt-3">Cancelar</button>
+                    <a href="calificar.html" class="btn btn-primary mt-3">Calificar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2024-11-27 16:00</td>
+                <td>Pedro Garcia</td>
+                <td>Geometría analítica</td>
+                <td>Confirmada</td>
+                <td class="action-btn-container">
+                    <a href="vistaTutoria.html" class="btn btn-warning mt-3">Ver más</a>
+                    <button class="btn btn-danger mt-3">Cancelar</button>
+                    <a href="calificar.html" class="btn btn-primary mt-3">Calificar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 TutorPlatform. Todos los derechos reservados.</p>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
