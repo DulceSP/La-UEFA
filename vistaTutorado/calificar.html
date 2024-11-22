@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calificación y Opinión</title>
-  link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
-
     .container-box {
       width: 556px;
       height: 621px;
@@ -66,6 +65,29 @@
       cursor: pointer;
       margin-top: 20px;
     }
+    .form-group {
+      margin-top: 20px;
+    }
+    .form-control {
+      border-radius: 35px;
+      border: 2px rgba(0, 0, 0, 0.65) solid;
+    }
+    .btn-regresar {
+      margin-top: 20px;
+      background-color: #28a745;
+      color: white;
+      border-radius: 35px;
+      padding: 10px 20px;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
@@ -75,10 +97,10 @@
       <a class="navbar-brand" href="index.html">TutorPlatform</a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="buscarTutor.html">Buscar tutor</a></li>
-            <li class="nav-item"><a class="nav-link" href="historialTutorias.html">Historial</a></li>
-            <li class="nav-item"><a class="nav-link" href="perfilTutorado.html">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="buscarTutor.html">Buscar tutor</a></li>
+          <li class="nav-item"><a class="nav-link" href="historialTutorias.html">Historial</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfilTutorado.html">Perfil</a></li>
         </ul>
       </div>
     </div>
@@ -86,28 +108,27 @@
 
   <div class="container text-center">
     <div class="container-box">
-      <div class="title-calificar">Calificar</div>
-      <div class="title-opinion">Escribe una opinión</div>
-      
+      <div class="title-calificar">Calificar Tutor</div>
 
-      <div class="image-container">
-        <img src="https://via.placeholder.com/180x72" alt="Imagen placeholder" />
-      </div>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="calificacion" class="comment-title">Calificación</label>
+          <input type="number" id="calificacion" class="form-control" min="1" max="5" placeholder="Ingresa tu calificación (1-5)">
+        </div>
 
+        <div class="form-group">
+          <label for="comentario" class="comment-title">Comentario</label>
+          <textarea id="comentario" class="form-control comment-box" rows="4" placeholder="Escribe tu comentario aquí..."></textarea>
+        </div>
 
-      <div class="comment-title">Comentario</div>
-      <div class="comment-box" contenteditable="true">
-    
-        Escribe tu comentario aquí...
-      </div>
-      
-    
-      <div class="close-btn" onclick="alert('Comentario cancelado')">x</div>
+        <div class="form-group">
+          <a href="historialTutorias.html" class="btn btn-success mt-3">Regresar</a>
+        </div>
+      </form>
     </div>
   </div>
 
-
-  <footer class="text-center mt-4">
+  <footer>
     <p>&copy; 2024 TutorPlatform. Todos los derechos reservados.</p>
   </footer>
 
